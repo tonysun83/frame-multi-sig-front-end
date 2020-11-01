@@ -15,6 +15,7 @@ import NodeInfo from './NodeInfo';
 import TemplateModule from './TemplateModule';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
+import MultiTransfer from './MultiTransfer';
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -73,7 +74,7 @@ function Main () {
             <Events />
           </Grid.Row>
           <Grid.Row>
-            <TemplateModule accountPair={accountPair} />
+            <MultiTransfer accountPair={accountPair} />
           </Grid.Row>
         </Grid>
       </Container>
